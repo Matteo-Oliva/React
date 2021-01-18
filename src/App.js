@@ -11,6 +11,7 @@ class App extends Component {
       { name: "Eddie", age: 23 },
       { name: "Lore", age: 24 },
     ],
+    otherState:'some other state'
   };
 
   swithNameHandler = () => {
@@ -30,18 +31,18 @@ class App extends Component {
         <p>this is really working!</p>
         <button onClick={this.swithNameHandler}>Switch Name</button>
         <Person
-          name="{this.state.persons[0].name}"
-          age="{this.state.persons[0].age}"
+          name={this.state.persons[0].name}
+          age={this.state.persons[0].age}
         >
           My hobby is Racing
         </Person>
         <Person
-          name="{this.state.persons[1].name}"
-          age="{this.state.persons[1].age}"
+          name={this.state.persons[1].name}
+          age={this.state.persons[1].age}
         />
         <Person
-          name="{this.state.persons[2].name}"
-          age="{this.state.persons[2].age}"
+          name={this.state.persons[2].name}
+          age={this.state.persons[2].age}
         />
       </div>
     );
